@@ -8,7 +8,7 @@
 <header>
   <nav>
     <a href="index.html">
-      <img src="https://via.placeholder.com/150x100" alt="">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
     <ul>
       <li><a href="blank.html">СТУДИЯ</a></li>
@@ -43,27 +43,27 @@
       <fieldset>
         <legend>Стоимость:</legend>
         <ul>
-          <li>
-            <p>задача выполнена на:<progress max="100" value="10">10%</progress></p>
-            <a href="#">от 0</a>
-            <a href="#">до 15000</a>
-          </li>
+          <li><input type="range" min="1" max="15000" step="500" value="7500"></li>
+            <li>
+              <a href="#">от 0</a>
+              <a href="#">до 15000</a>
+            </li>
         </ul>
       </fieldset>
       <fieldset>
         <legend>Сетка:</legend>
         <ul>
           <li>
-            <input type="radio"name="grid"value="Адаптивная" id="filter-adaptive" checked>
+            <input type="radio" name="grid" value="Адаптивная" id="filter-adaptive" checked>
             <label for="filter-adaptive">Адаптивная</label>
           </li>
           <li>
-            <input type="radio" name="grid"value="Фиксированая" id="filter-Fixed">
+            <input type="radio" name="grid" value="Фиксированая" id="filter-Fixed">
             <label for="filter-Fixed">Фиксированая</label>
           </li>
           <li>
-            <input type="radio" name="grid"value="Резиновая" id="filter-Rubber band">
-            <label for="filter-Rubber band">Резиновая</label>
+            <input type="radio" name="grid" value="Резиновая" id="filter-Rubber-band">
+            <label for="filter-Rubber-band">Резиновая</label>
           </li>
         </ul>
       </fieldset>
@@ -71,23 +71,23 @@
         <legend>Особенности:</legend>
         <ul>
           <li>
-            <input type="checkbox" name="Слайдер"id="filter-Слайдер" checked>
+            <input type="checkbox" name="Слайдер" id="filter-Слайдер" checked>
             <label for="filter-Слайдер">Слайдер</label>
           </li>
           <li>
-            <input type="checkbox" name="Блок преимуществ"id="filter-Блок преимуществ">
+            <input type="checkbox" name="Блок преимуществ" id="filter-Блок преимуществ">
             <label for="filter-Блок преимуществ">Блок преимуществ</label>
           </li>
           <li>
-            <input type="checkbox" name="Новости"id="filter-Новости"checked>
+            <input type="checkbox" name="Новости" id="filter-Новости" checked>
             <label for="filter-Новости">Новости</label>
           </li>
           <li>
-            <input type="checkbox" name="Галерея"id="filter-Галерея">
+            <input type="checkbox" name="Галерея" id="filter-Галерея">
             <label for="filter-Галерея">Галерея</label>
           </li>
           <li>
-            <input type="checkbox" name="Корзина"id="filter-Корзина">
+            <input type="checkbox" name="Корзина" id="filter-Корзина">
             <label for="filter-Корзина">Корзина</label>
           </li>
         </ul>
@@ -101,9 +101,7 @@
       <li>
         <a href="catalog.html">
           <h3>Sedona</h3>
-          <p>
-            <img src="https://via.placeholder.com/100x100"alt="">
-          </p>
+          <img src="img/sedona.jpg" width="358" height="578" alt="Седона">
         </a>
         <p>
           Информационный сайт<br>
@@ -114,48 +112,31 @@
       <li>
         <a href="catalog.html">
           <h3>PINK</h3>
-          <p>
-            <img src="https://via.placeholder.com/100x100"alt="">
-          </p>
+          <img src="img/pink.jpg" width="358" height="578" alt="PINK">
         </a>
       </li>
       <li>
         <a href="catalog.html">
           <h3>Барбершоп</h3>
-          <p>
-            <img src="https://via.placeholder.com/100x100"alt="">
-          </p>
+          <img src="img/barbershop.jpg" width="358" height="578" alt="Барбершоп">
         </a>
       </li>
       <li>
         <a href="catalog.html">
           <h3>MISHKA</h3>
-          <p>
-            <img src="https://via.placeholder.com/100x100"alt="">
-          </p>
+          <img src="img/mishka.jpg" width="358" height="578" alt="MISHKA">
         </a>
       </li>
       <li>
         <a href="catalog.html">
           <h3>Обучение</h3>
-          <p>
-            <img src="https://via.placeholder.com/100x100"alt="">
-          </p>
+          <img src="img/training.jpg" width="358" height="578" alt="Обучение">
         </a>
       </li>
       <li>
         <a href="catalog.html">
           <h3>Квас</h3>
-          <p>
-            <img src="https://via.placeholder.com/100x100"alt="">
-          </p>
-        </a>
-      </li><li>
-        <a href="catalog.html">
-          <h3>Квас</h3>
-          <p>
-            <img src="https://via.placeholder.com/100x100"alt="">
-          </p>
+          <img src="img/brew.jpg" width="358" height="578" alt="Квас">
         </a>
       </li>
     </ul>
@@ -185,7 +166,7 @@
           <a href="tel:+798122757575">тел.+7 (812) 275-75-75</a>
         </p>
       </li>
-      <p><button type="button">НАПИШИ НАМ</button></p>
+        <button type="button">НАПИШИ НАМ</button>
     </ul>
   </section>
   <!--Здесь будет карта-->
@@ -213,16 +194,16 @@
   <p>Напишите нам</p>
   <form action="blank.html" method="post">
     <p>
-      <label for="your-name">Ваше имя:</label>
-      <input id="your-name">
+      <label for="name">Ваше имя:</label>
+      <input id="name" placeholder="Имя Фамилия">
     </p>
     <p>
-      <label for="login-login">Ваш email:</label>
-      <input id="login-login">
+      <label for="email">Ваш email:</label>
+      <input id="email" placeholder="email@example.com">
     </p>
     <p>
-      <label for="login-letter">Текст письма:</label>
-      <input id="login-letter">
+      <label for="message">Текст письма:</label>
+      <input id="message" placeholder="В свободной форме">
     </p>
     <p>
       <button type="submit">Отправить</button>
@@ -232,3 +213,4 @@
 
 </body>
 </html>
+
