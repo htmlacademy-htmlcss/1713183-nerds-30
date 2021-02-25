@@ -53,13 +53,19 @@
 
  /*Global*/
  .page-body {
-   width: 1157px;
+   width: 1440px;
    font-family: " RT Roboto";
    font-size: 16px;
    line-height: 24px;
    font-weight: 700;
     color:var(--heading-color);
    text-transform: none;
+
+   min-font-size: 100%;
+   display: grid;
+   grid-template: min-content 1fr max-content;
+   align-content: start;
+
  }
  a {
    color: var(--heading-color);
@@ -93,7 +99,7 @@ img{
    color: #D7373B;
  }
 
- /*добавил для визуального отображения*/
+ /*добавила для визуального отображения*/
  .social-icon {
    background-color:var(--basic-social-icon);
  }
@@ -109,27 +115,54 @@ img{
  .button-yellow:focus {
    background-color: var(--focus-yellow);
  }
-
  .button-green:hover,
  .button-green:focus {
    background-color: var(--focus-green);
  }
-}
- /*Main navigation*/
 
- .header main{
-   background-color:var(--basic-grey);
+ /*Grid*/
+ page{
+   height: 100%;
  }
+ /*Main header*/
+
+ .header-main{
+   background-color:var(--basic-grey);
+   margin-bottom: 80px;
+
+ }
+ /*Main navigation*/
  .main-navigation{
+   display: grid;
    font-weight: 500;
    line-height: 30px;
  }
+ .main-header-bar{
+   background-color:var(--basic-grey);
+
+ }
+
+ .main-navigation-wrapper{
+   display: grid;
+   grid-template-columns: 1fr 2fr min-content;
+   width: 960px;
+   margin: 0 auto;
+   padding: 0 10px;
+ }
  .site-navigation{
    list-style: none;
+   margin: 0;
+   padding: 0;
+
  }
 .site-navigation a:active{color: red;}
 
 
+/*logo*/
+ .main-header-logo{
+   margin-left:140px;
+
+ }
 .features{
   background-color: var(--basic-grey);
 }
@@ -176,9 +209,88 @@ img{
    line-height: 18px;
    font-weight: 400;
  }
+/*container*/
+ .container{
+   width:1440px;
+   margin: 0 auto;
+   padding: 0 10px;
+ }
 
- /*footer*/
+ /*features*/
+ .features{
+   margin-bottom:80px;
 
+ }
+ .features-list{
+   display: grid;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ /*services*/
+ .services{
+
+ }
+ .services-list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: 0;
+   padding: 0;
+   column-gap:100px;
+ }
+ .services-item{
+
+ }
+ /*index-columns*/
+
+ .index-columns{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+ }
+ .index-columns h2{
+
+ }
+ /*article*/
+ .article{
+
+ }
+ .article-logo{
+
+
+ }
+
+/*partners*/
+ .partners{
+
+ }
+ .partners-list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 0;
+   padding: 0;
+   column-gap:95px;
+ }
+ /* main-footer*/
+ .main-footer{
+   padding:68px 0;
+   margin-top: 68px;
+ }
+ .footer-contacts{
+   display: grid;
+   grid-template-columns: 1fr;
+ }
+
+.footer-below{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.footer-social{
+  width: 261px;
+}
+.footer-slogan{
+  width: 660px;
+  justify-self: center;
+}
  .contacts-title {
    font-size: 18px;
    line-height: 30px;
