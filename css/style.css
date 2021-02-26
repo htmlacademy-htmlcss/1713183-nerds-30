@@ -53,17 +53,19 @@
 
  /*Global*/
  .page-body {
+   min-width: 1160px;
    width: 1440px;
+   height:355px;
    font-family: " RT Roboto";
    font-size: 16px;
    line-height: 24px;
-   font-weight: 700;
+   font-weight: 400;
     color:var(--heading-color);
+   min-height: 100%;
    text-transform: none;
-
    min-font-size: 100%;
    display: grid;
-   grid-template: min-content 1fr max-content;
+   grid-template-rows: min-content 1fr min-content;
    align-content: start;
 
  }
@@ -121,7 +123,7 @@ img{
  }
 
  /*Grid*/
- page{
+ .page-body{
    height: 100%;
  }
  /*Main header*/
@@ -129,15 +131,22 @@ img{
  .header-main{
    background-color:var(--basic-grey);
    margin-bottom: 80px;
+   padding-top: 49px;
 
  }
  /*Main navigation*/
  .main-navigation{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    width: 1440px;
    font-weight: 500;
    line-height: 30px;
+   font-size: 16px;
+ }
+ .main-navigation{
+   align-items: flex-start;
+   flex-direction: row;
  }
  .main-header-bar{
    background-color:var(--basic-grey);
@@ -145,21 +154,32 @@ img{
  }
 .main-header-logo{
   order:0;
+  width:160px ;
 }
+ .main-header-logo:hover .logotip{    /* при наведении картинка в ссылке меняет прозрачность */
+   opacity: 0.7;
+ }
+ .main-header-logo:active .logotip{    /* картинка в ссылке меняет прозрачность */
+   opacity: 0.3;
+ }
  .main-navigation-wrapper{
-
    width: 960px;
    margin: 0 auto;
    padding: 0 10px;
  }
  .site-navigation{
+   display: flex;
    list-style: none;
-   margin: 0;
-   padding: 0;
-
+   order: 0;
+   flex-grow: 0;
+   margin: 0px 45px;
  }
 .site-navigation a:active{color: red;}
 
+.user-navigation{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*logo*/
  .main-header-logo{
@@ -185,7 +205,7 @@ img{
    font-weight: 400;
  }
 
- article-title{
+ .article-title{
    font-size: 45px;
    line-height: 45px;
    font-weight: 500;
@@ -214,7 +234,7 @@ img{
  }
 /*container*/
  .container{
-   width:1440px;
+   width:1160px;
    margin: 0 auto;
    padding: 0 10px;
  }
@@ -256,16 +276,15 @@ img{
  }
  /*article*/
  .article{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
 
  }
  .article-logo{
-
-
  }
 
 /*partners*/
  .partners{
-
  }
  .partners-list{
    display: grid;
@@ -329,13 +348,14 @@ img{
    display: grid;
    grid-template-columns: 1fr 1fr;
  }
+
  .index-columns{
    display: grid;
    grid-template-columns: 1fr 2fr;
    width:180px;
    padding: 0;
    margin-left: 50px;
-   
+
  }
  .sidebar-price{
    border: none;
@@ -346,41 +366,54 @@ img{
  .sidebar-grid{
    border: none;
  }
-.items{
-  display:grid;
-
+.items h2{
+  line-height: 30px;
+  font-size: 18px;
 }
- .paggination-list {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 18px;
-   color: var(--heading-color);
+ .cart-item-image{
+   width:358px;
+   height:578px;
+   margin: 0;
+
  }
+ .items{
+
+ }
+ .catalog-list{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 42px;
+   grid-row-gap: 32px;
+   list-style: none;
+   margin: 0;
+   padding:0;
+   margin-bottom: 55px;
+ }
+
  .cart-item {
-   width:  360px;
+   width: 360px;
    min-height: 398px;
    font-weight: 400;
-   margin-bottom: 20px;
-   margin-right: 20px;
+   margin-bottom: 32px;
+   margin-right: 42px;
    font-size: 16px;
    line-height: 18px;
    color: var(--text-contact-cart);
    background-color: var(--basic-grey);
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
  }
+
  .cart-name {
    font-weight: 700;
    font-size: 18px;
    line-height: 30px;
    color: var(--heading-color);
  }
- .grid-cards {
-
- }
- .cart-catalog {
-
-   padding: 0;
-   margin: 0;
-   margin-bottom: 25px;
+ .paggination-list {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 18px;
+   color: var(--heading-color);
  }
  /*стили повидения каталога*/
  .grid-list:hover,
