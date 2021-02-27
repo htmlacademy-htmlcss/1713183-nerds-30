@@ -14,22 +14,26 @@
 
   <body class="page-body">
   <header class="header-main">
-    <div class="container">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </a>
-        <ul class="site-navigation">
-          <li><a class="site-navigation-link" href="index.html">Студия</a></li>
-          <li><a class="site-navigation-link" href="#">Клиенты</a></li>
-          <li><a class="site-navigation-link">Магазин</a></li>
-          <li><a class="site-navigation-link" href="#">Контакты</a></li>
-        </ul>
-        <a class="cart-link" href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+        <div class="main-header-bar">
+          <div class="main-navigation-wrapper">
+            <ul class="site-navigation">
+              <li><a class="site-navigation-link" href="index.html">Студия</a></li>
+              <li><a class="site-navigation-link" href="#">Клиенты</a></li>
+              <li><a class="site-navigation-link">Магазин</a></li>
+              <li><a class="site-navigation-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="user-navigation">
+          <a class="cart-link" href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+        </div>
       </nav>
-    </div>
   </header>
-  <!--Первый блок со слайдером-->
+
  <main class="container">
    <h1>Дизайн-студия Нёрдс</h1>
    <!--Первый блок со слайдером-->
@@ -40,6 +44,7 @@
          <p class="list-discription">
            Математически выверенный дизайн<br />
            для вашего сайта или мобильного приложения
+         </p>
            <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
            <img src="img/slide.png" width="1157" height="431" alt="Логотип Нёрдс">
        </li>
@@ -63,6 +68,7 @@
          </p>
          <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
          <img src="img/slide3.png" width="1157" height="431" alt="Логотип Нёрдс">
+       </li>
      </ul>
    </section>
 
@@ -97,31 +103,36 @@
    </section>
 
    <!--Третий блок описание студии-->
-   <section class="article">
-     <h2>Описание студии</h2>
-     <p class="article-title">Мы — маленькая, но гордая<br>
-       дизайн-студия из Краснодара.</p>
-     <p class="article-item">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-       превыше креатива. Работаем не покладая рук, как роботы.</p>
-     <p class="orders">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-     <ul class="orders-list">
-       <li class="orders-item">Веб-сайтов любой сложности</li>
-       <li class="orders-item">Мобильных приложений для iOS и Android</li>
-       <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
-     </ul>
-     <img src="img/nerds-illustration.svg" width="360" height="208" alt="Иллюстрация-1">
-     <p class="acuracy">с 2004 года ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-     <ul>
-       <li class="acuracy-percent">146%</li>
-       <li class="acuracy-percent">100%</li>
-       <li class="acuracy-percent">50%</li>
-     </ul>
-     <ul >
-       <li class="acuracy-tag">Уровень самоотдачи</li>
-       <li class="acuracy-tag">Соблюдение сроков</li>
-       <li class="acuracy-tag">Минимальная предоплата</li>
-     </ul>
-   </section>
+   <div class="index-columns">
+     <section class="article">
+       <h2>Описание студии</h2>
+       <p class="article-title">Мы — маленькая, но гордая<br>
+         дизайн-студия из Краснодара.</p>
+       <p class="article-item">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+         превыше креатива. Работаем не покладая рук, как роботы.</p>
+       <p class="orders">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+       <ul class="orders-list">
+         <li class="orders-item">Веб-сайтов любой сложности</li>
+         <li class="orders-item">Мобильных приложений для iOS и Android</li>
+         <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+       </ul>
+     </section>
+     <section class="article-logo">
+       <img src="img/nerds-illustration.svg" width="360" height="208" alt="Иллюстрация-1">
+       <p class="acuracy">с 2004 года ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+       <ul>
+         <li class="acuracy-percent">146%</li>
+         <li class="acuracy-percent">100%</li>
+         <li class="acuracy-percent">50%</li>
+       </ul>
+       <ul >
+         <li class="acuracy-tag">Уровень самоотдачи</li>
+         <li class="acuracy-tag">Соблюдение сроков</li>
+         <li class="acuracy-tag">Минимальная предоплата</li>
+       </ul>
+     </section>
+   </div>
+
 
    <!--Четвертый блок с логотипами-->
 
@@ -132,13 +143,13 @@
          <img src="img/Group-1.svg" width="199" height="68" alt="Группа-1">
        </li>
        <li class="partners-item">
-         <img src="img/Group-2.svg" width="199" height="68" alt="Группа-2">
+         <img src="img/Group-2.svg" width="209" height="90" alt="Группа-2">
        </li>
        <li class="partners-item">
-         <img src="img/Group-3.svg" width="199" height="68" alt="Группа-3">
+         <img src="img/Group-3.svg" width="185" height="52" alt="Группа-3">
        </li>
        <li class="partners-item">
-         <img src="img/Group-4.svg" width="199" height="68" alt="Группа-4">
+         <img src="img/Group-4.svg" width="173" height="84" alt="Группа-4">
        </li>
      </ul>
     </section>
@@ -146,35 +157,38 @@
  </main>
 
   <footer class="main-footer">
-    <section class="contacts">
-      <h2>Как добраться</h2>
-      <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
-      <p class="contacts-tex">
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8<br>
-        <br>
-        tel:+(79812)275-75-75
-      </p>
-      <a class="button" href="#">НАПИШИТЕ НАМ</a>
-    </section>
-
-    <section class="footer-social">
-      <ul>
-        <li>
-          <a class="social-button"><div><img src="img/vk.svg" width="26" height="15" alt="Вконтакте"></div></a>
-        </li>
-        <li>
-          <a  class="social-button"><div><img src="img/fb.svg" width="26" height="15" alt="Фейсбук"></div></a>
-        </li>
-        <li>
-          <a  class="social-button"><div><img src="img/insta.svg" width="26" height="15" alt="Инстраграмм"></div></a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer-slogan">
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p class="footer-item">Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    <div class="footer-contacts">
+      <section class="contacts">
+        <h2>Как добраться</h2>
+        <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+        <p class="contacts-tex">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          <br>
+          tel:+(79812)275-75-75
+        </p>
+        <a class="button" href="#">НАПИШИТЕ НАМ</a>
+      </section>
+    </div>
+    <div class="footer-below">
+      <section class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button"><div><img src="img/vk.svg" width="26" height="15" alt="Вконтакте"></div></a>
+          </li>
+          <li>
+            <a  class="social-button"><div><img src="img/fb.svg" width="26" height="15" alt="Фейсбук"></div></a>
+          </li>
+          <li>
+            <a  class="social-button"><div><img src="img/insta.svg" width="26" height="15" alt="Инстраграмм"></div></a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-slogan">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p class="footer-item">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
   </footer>
 
   <!--Скрытые части-->
