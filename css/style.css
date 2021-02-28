@@ -55,19 +55,18 @@
  .page-body {
    min-width: 1160px;
    width: 1440px;
-   height:355px;
+   height:2476px;
    font-family: " RT Roboto";
    font-size: 16px;
    line-height: 24px;
    font-weight: 400;
-    color:var(--heading-color);
+   color:var(--heading-color);
    min-height: 100%;
    text-transform: none;
    min-font-size: 100%;
    display: grid;
    grid-template-rows: min-content 1fr min-content;
    align-content: start;
-
  }
  a {
    color: var(--heading-color);
@@ -101,7 +100,7 @@ img{
    color: #D7373B;
  }
 
- /*добавила для визуального отображения*/
+
  .social-icon {
    background-color:var(--basic-social-icon);
  }
@@ -130,6 +129,10 @@ img{
 
  .header-main{
    background-color:var(--basic-grey);
+   width: 1440px;
+   height: 129px;
+   left: 0;
+   top: 0;
    margin-bottom: 80px;
    padding-top: 49px;
 
@@ -143,12 +146,21 @@ img{
    font-weight: 500;
    line-height: 30px;
    font-size: 16px;
+   text-transform: uppercase;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 0 45px;
  }
  .main-navigation{
    align-items: flex-start;
    flex-direction: row;
  }
  .main-header-bar{
+   width: 1440px;
+   height: 129px;
+   left: 0px;
+   top: 0px;
    background-color:var(--basic-grey);
 
  }
@@ -169,22 +181,56 @@ img{
  }
  .site-navigation{
    display: flex;
-   list-style: none;
-   order: 0;
-   flex-grow: 0;
-   margin: 0px 45px;
+   flex-direction: row;
+   align-items: center;
+   padding: 0;
+   width: 437px;
+   height: 30px;
+   left: 502px;
+   top: 75px;
+   margin-left: 202px;
+ }
+ .site-navigation-link{
+   display: flex;
+   width: 86px;
+   height: 30px;
+   left: 351px;
+   top: 0;
+   font-family: Roboto;
+   font-style: normal;
+   line-height: 30px;
+
  }
 .site-navigation a:active{color: red;}
 
-.user-navigation{
+.user-navigation {
   display: flex;
-  flex-wrap: wrap;
-}
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  width: 75px;
+  height: 30px;
+  left: 1224.84px;
+  top: 75px;
 
+}
+.cart-link{
+  display: flex;
+  width: 15px;
+  height: 15px;
+  left: 1185px;
+  top: 82px;
+
+}
 /*logo*/
  .main-header-logo{
-   margin-left:140px;
-
+   width: 159.87px;
+   height: 65.02px;
+   left: 140px;
+   top: 48.98px;
  }
 .features{
   background-color: var(--basic-grey);
@@ -250,42 +296,31 @@ img{
    padding: 0;
    list-style: none;
  }
- /*services*/
- .services{
 
- }
  .services-list{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    margin: 0;
    padding: 0;
    column-gap:100px;
-
  }
- .services-item{
 
- }
  /*index-columns*/
 
  .index-columns{
    display: grid;
    grid-template-columns: 2fr 1fr;
  }
- .index-columns h2{
 
- }
+
+
  /*article*/
  .article{
    display: grid;
    grid-template-columns: 1fr 1fr ;
 
  }
- .article-logo{
- }
 
-/*partners*/
- .partners{
- }
  .partners-list{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -342,8 +377,19 @@ img{
    column-gap: 100px;
  }
  .catalog-list{
-   justify-self: center;
+   display: flex;
+   align-items: center;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 55px;
+   line-height: 55px;
+   width: 727px;
+   height: 55px;
+   left: 357px;
+   top: 192px;
  }
+
  .catalog-title{
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -374,21 +420,8 @@ img{
    width:358px;
    height:578px;
    margin: 0;
+ }
 
- }
- .items{
-
- }
- .catalog-list{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   column-gap: 42px;
-   grid-row-gap: 32px;
-   list-style: none;
-   margin: 0;
-   padding:0;
-   margin-bottom: 55px;
- }
 
  .cart-item {
    width: 360px;
@@ -410,6 +443,8 @@ img{
    color: var(--heading-color);
  }
  .paggination-list {
+   display: flex;
+   flex-wrap: wrap;
    font-weight: 500;
    font-size: 16px;
    line-height: 18px;
