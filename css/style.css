@@ -89,6 +89,14 @@ img{
    color: var(--basic-white);
    background-color: var(--basic-red);
  }
+ .button-gray{
+   background:var(--basic-grey);
+   border-radius: 3px;
+   width: 260px;
+   height: 50px;
+   left: 140px;
+   top: 1140px;
+ }
 
  .button-yellow {
    background-color: var(--basic-yellow);
@@ -99,12 +107,9 @@ img{
  .social-button {
    color: #D7373B;
  }
-
-
  .social-icon {
    background-color:var(--basic-social-icon);
  }
-
 
  /*стили поведения при наведении*/
  .button:hover,
@@ -391,10 +396,39 @@ img{
  }
 
  .catalog-title{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
- }
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
 
+ }
+ .sort{
+   display: flex;
+ }
+.sort-list{
+  width: 134px;
+  height: 30px;
+  left: 540px;
+  top: 410px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.field-type{
+  display: flex;
+}
+
+.field-item{
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+}
  .index-columns{
    display: grid;
    grid-template-columns: 1fr 2fr;
@@ -402,6 +436,20 @@ img{
    padding: 0;
    margin-left: 50px;
 
+ }
+ .sidebar-list{
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+   width: 115px;
+   height: 30px;
+   left: 140px;
+   top: 410px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 30px;
  }
  .sidebar-price{
    border: none;
