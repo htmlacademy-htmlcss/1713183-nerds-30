@@ -413,6 +413,7 @@ img{
  }
 .cart-catalog{
   display: flex;
+  flex-wrap: wrap;
 }
  .cart-item {
    width: 360px;
@@ -456,7 +457,7 @@ img{
  .paggination-list:hover {
    background-color: var(--focus-grey);
  }
- 
+
  /*modal*/
  .modal{
    display: none;
