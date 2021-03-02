@@ -54,20 +54,17 @@
  /*Global*/
  .page-body {
    min-width: 1160px;
-   width: 1440px;
-   height:355px;
    font-family: " RT Roboto";
    font-size: 16px;
    line-height: 24px;
    font-weight: 400;
-    color:var(--heading-color);
+   color:var(--heading-color);
    min-height: 100%;
    text-transform: none;
    min-font-size: 100%;
    display: grid;
    grid-template-rows: min-content 1fr min-content;
    align-content: start;
-
  }
  a {
    color: var(--heading-color);
@@ -90,6 +87,12 @@ img{
    color: var(--basic-white);
    background-color: var(--basic-red);
  }
+ .button-gray{
+   background:var(--basic-grey);
+   border-radius: 3px;
+   width: 260px;
+   height: 50px;
+ }
 
  .button-yellow {
    background-color: var(--basic-yellow);
@@ -100,12 +103,9 @@ img{
  .social-button {
    color: #D7373B;
  }
-
- /*добавила для визуального отображения*/
  .social-icon {
    background-color:var(--basic-social-icon);
  }
-
 
  /*стили поведения при наведении*/
  .button:hover,
@@ -130,6 +130,7 @@ img{
 
  .header-main{
    background-color:var(--basic-grey);
+   height: 129px;
    margin-bottom: 80px;
    padding-top: 49px;
 
@@ -139,10 +140,14 @@ img{
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 1440px;
    font-weight: 500;
    line-height: 30px;
    font-size: 16px;
+   text-transform: uppercase;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 0 45px;
  }
  .main-navigation{
    align-items: flex-start;
@@ -154,7 +159,7 @@ img{
  }
 .main-header-logo{
   order:0;
-  width:160px ;
+
 }
  .main-header-logo:hover .logotip{    /* при наведении картинка в ссылке меняет прозрачность */
    opacity: 0.7;
@@ -169,26 +174,39 @@ img{
  }
  .site-navigation{
    display: flex;
-   list-style: none;
-   order: 0;
-   flex-grow: 0;
-   margin: 0px 45px;
+   flex-direction: row;
+   align-items: center;
+   padding: 0;
+   margin-left: 202px;
+ }
+ .site-navigation-link{
+   display: flex;
+   width: 86px;
+   height: 30px;
+   font-family: Roboto;
+   font-style: normal;
+   line-height: 30px;
+
  }
 .site-navigation a:active{color: red;}
 
-.user-navigation{
+.user-navigation {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
 }
-
-/*logo*/
- .main-header-logo{
-   margin-left:140px;
-
- }
+.cart-link{
+  display: flex;
+  margin-right: 15px;
+}
 .features{
   background-color: var(--basic-grey);
 }
+
  .list-title {
    font-size: 55px;
    line-height: 55px;
@@ -234,7 +252,6 @@ img{
  }
 /*container*/
  .container{
-   width:1160px;
    margin: 0 auto;
    padding: 0 10px;
  }
@@ -250,42 +267,22 @@ img{
    padding: 0;
    list-style: none;
  }
- /*services*/
- .services{
 
- }
  .services-list{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    margin: 0;
    padding: 0;
    column-gap:100px;
-
  }
- .services-item{
 
- }
- /*index-columns*/
-
- .index-columns{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
- }
- .index-columns h2{
-
- }
  /*article*/
  .article{
    display: grid;
    grid-template-columns: 1fr 1fr ;
 
  }
- .article-logo{
- }
 
-/*partners*/
- .partners{
- }
  .partners-list{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -342,20 +339,62 @@ img{
    column-gap: 100px;
  }
  .catalog-list{
-   justify-self: center;
- }
- .catalog-title{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+   display: flex;
+   align-items: center;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 55px;
+   line-height: 55px;
  }
 
+ .catalog-title{
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+
+ }
+ .sort{
+   display: flex;
+ }
+.sort-list{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.field-type{
+  display: flex;
+}
+
+.field-item{
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+}
  .index-columns{
    display: grid;
    grid-template-columns: 1fr 2fr;
-   width:180px;
+   align-items: center;
    padding: 0;
    margin-left: 50px;
 
+ }
+ .sidebar-list{
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 30px;
  }
  .sidebar-price{
    border: none;
@@ -366,30 +405,16 @@ img{
  .sidebar-grid{
    border: none;
  }
-.items h2{
-  line-height: 30px;
-  font-size: 18px;
-}
+
  .cart-item-image{
    width:358px;
    height:578px;
    margin: 0;
-
  }
- .items{
-
- }
- .catalog-list{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   column-gap: 42px;
-   grid-row-gap: 32px;
-   list-style: none;
-   margin: 0;
-   padding:0;
-   margin-bottom: 55px;
- }
-
+.cart-catalog{
+  display: flex;
+  flex-wrap: wrap;
+}
  .cart-item {
    width: 360px;
    min-height: 398px;
@@ -410,6 +435,8 @@ img{
    color: var(--heading-color);
  }
  .paggination-list {
+   display: flex;
+   flex-wrap: wrap;
    font-weight: 500;
    font-size: 16px;
    line-height: 18px;
@@ -431,8 +458,10 @@ img{
    background-color: var(--focus-grey);
  }
 
-
  /*modal*/
+ .modal{
+   display: none;
+ }
  .modal-description {
    font-size: 45px;
    line-height: 53px;

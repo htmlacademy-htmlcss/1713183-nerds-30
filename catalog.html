@@ -30,15 +30,14 @@
 </header>
 <!--Главный контент-->
 <main class="page-catalog container ">
-  <h1>Каталог примеров</h1>
   <div class="catalog-list">
     <p>Магазин готовых шаблонов</p>
   </div>
   <div class="catalog-title">
     <section class="sort">
-        <p>Сортировать:</p>
+        <p class="sort-list">Сортировать:</p>
         <ul class="field-type">
-          <li class="field-item field-curent"><a href="#">По цене</a></li>
+          <li class="field-item field-current"><a href="#">По цене</a></li>
           <li class="field-item"><a href="#">По типу</a></li>
           <li class="field-item"><a href="#">По названию</a></li>
         </ul>
@@ -50,10 +49,9 @@
   </div>
   <div class="index-columns">
   <section class="sidebar">
-    <h2>Фильтр товаров</h2>
     <form method="get" action="index.html">
       <fieldset class="sidebar-price">
-        <legend>Стоимость:</legend>
+        <legend class="sidebar-list">Стоимость:</legend>
         <ul>
           <li>
             <input class="sidebar-item" type="range" min="1" max="15000" step="500" value="7500">
@@ -64,9 +62,8 @@
             </li>
         </ul>
       </fieldset>
-
       <fieldset class="sidebar-grid">
-        <legend>Сетка:</legend>
+        <legend class="sidebar-list">Сетка:</legend>
         <ul>
           <li>
             <input type="radio" name="grid" value="Адаптивная" id="filter-adaptive" checked>
@@ -84,7 +81,7 @@
       </fieldset>
 
       <fieldset class="sidebar-features">
-        <legend>Особенности:</legend>
+        <legend class="sidebar-list">Особенности:</legend>
         <ul>
           <li>
             <input type="checkbox" name="Слайдер" id="filter-Слайдер" checked>
@@ -108,12 +105,11 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button" type="submit">Показать</button>
+      <button class="button-gray" type="submit">Показать</button>
     </form>
   </section>
     <!--Блок с фильтрами карточек-->
   <section class="items">
-    <h2>Список макетов</h2>
       <ul class="cart-catalog">
         <li class="cart-item">
           <img src="img/sedona.jpg" width="358" height="578" alt="Седона">
@@ -145,8 +141,6 @@
           <a class="cart-name" href="#">Квас</a>
         </li>
       </ul>
-
-
     <ul class="paggination-list">
       <li class="paggination-item"><a>1</a></li>
       <li class="paggination-item"><a href="#">2</a></li>
