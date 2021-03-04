@@ -171,6 +171,10 @@ img{
  .social-icon {
    background-color:var(--basic-social-icon);
  }
+ .promo-button {
+   padding-left: 54px;
+   padding-right: 54px;
+ }
 
  /*Grid*/
  .page {
