@@ -30,6 +30,7 @@
    --transparent: rgba(0, 0, 0, 0);
    --modal-shadow: rgba(0, 0, 0, 0.4);
    /*buttons*/
+   --ui-slider-active-color: #C1C1C1;
    --basic-red:#FB565A;
    --focus-red:#E74246;
    --click-red:#D7373B;
@@ -94,14 +95,10 @@ img{
  /*buttons*/
  .button {
    display: inline-block;
-
    vertical-align: middle;
-
    cursor: pointer;
-
    border: none;
    box-shadow: none;
-
    font-weight: 500;
    font-size: 16px;
    line-height: 18px;
@@ -202,16 +199,14 @@ img{
  /*  Layout - Main navigation */
  .main-navigation-wrapper {
    display: flex;
+   flex-wrap: wrap;
    width: 1160px;
    align-items: center;
-
    margin: 0 auto;
  }
-
  .main-header {
    margin-bottom: 0;
  }
-
  .navigation-list {
    display: flex;
    margin: 0 auto;
@@ -413,17 +408,47 @@ img{
    margin: 0 auto;
    padding: 0 10px;
  }
-
- /*features*/
- .features{
-   margin-bottom:80px;
-
+ /* Layout - features */
+ .features-container{
+   position: relative;
+ }
+ .promo-wrapper {
+   position: relative;
+   width: 1160px;
+   margin: 0 auto;
+   padding: 0;
  }
  .features-list{
-   display: grid;
-   margin: 0;
-   padding: 0;
    list-style: none;
+   padding-bottom: 80px;
+ }
+ .slide-current {
+   display: block;
+ }
+ .slide {
+   display:none;
+ }
+ .features-description-container {
+   position: relative;
+   z-index: 1;
+   padding-top: 78px;
+   width: 560px;
+ }
+ .slide-image {
+   position: absolute;
+   z-index: 0;
+   right: 0;
+   top: 0;
+ }
+ .slider-controls{
+   display: flex;
+   flex-wrap: wrap;
+   position: absolute;
+   bottom: 96px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 0;
+
  }
 
  .services-list{
@@ -433,8 +458,37 @@ img{
    padding: 0;
    column-gap:100px;
  }
+ .slider-button{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   background: var(--basic-white);
+   padding: 0;
+ }
+.slider-button::before{
+  content:"";
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--transparent);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+ .slider-button-current::before {
+   border-color:  var(--ui-slider-active-color);
+ }
 
- /*article*/
+ .slider-button:not(:last-child) {
+   margin-right: 17px;
+ }
+
+   /*article*/
  .article{
    display: grid;
    grid-template-columns: 1fr 1fr ;
@@ -448,6 +502,7 @@ img{
  }
  .clients-list {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
    padding: 20px 0 0;
@@ -494,7 +549,7 @@ img{
  }
 
  /* main-footer*/
- /* Contatcts */
+ /* Contacts*/
 
  .contacts {
    background-image:;
@@ -520,7 +575,6 @@ img{
    line-height: 30px;
    text-transform: uppercase;
    color: var(--heading-color);
-
    margin-bottom: 22px;
  }
 
@@ -543,7 +597,6 @@ img{
    border: none;
    width: 100%;
  }
-
 
  /* Social */
  .contacts-wrapper, .social-wrapper {
@@ -663,6 +716,7 @@ img{
  }
  .catalog-list{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    font-family: "Roboto", "Arial", sans-serif;
    font-style: normal;
@@ -673,6 +727,7 @@ img{
 
  .catalog-title{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    text-transform: uppercase;
 
@@ -689,6 +744,7 @@ img{
 }
 .field-type{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .field-item{
@@ -711,6 +767,7 @@ img{
  }
  .sidebar-list{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    text-transform: uppercase;
    font-family: "Roboto", "Arial", sans-serif;
@@ -764,6 +821,7 @@ img{
 
  .pagination-list {
    display: flex;
+   flex-wrap: wrap;
  }
 
  .pagination-item {
@@ -827,12 +885,9 @@ img{
  .pagination-list:hover {
    background-color: var(--focus-grey);
  }
-
-
  /* Modal */
-
  .modal {
-   display: none;
+   display:none;
    position: fixed;
    left: 0;
    right: 0;
@@ -868,12 +923,14 @@ img{
 
  .modal-half-container {
    display: flex;
+   flex-wrap: wrap;
    flex-direction: row;
    flex-wrap: wrap;
  }
 
  .modal-alone-container {
    display: flex;
+   flex-wrap: wrap;
    flex-direction: row;
    flex-wrap: wrap;
    width: 760px;
