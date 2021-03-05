@@ -226,15 +226,7 @@ img{
    margin: 0;
  }
 
- .main-header {
-   height: 129px;
-   margin-bottom: 80px;
-
- }
  /*Main navigation*/
- .main-header {
-   height: 114px;
- }
 
  .main-logo:active path {
    fill: var(--logo-focus);
@@ -408,14 +400,14 @@ img{
    line-height: 18px;
    font-weight: 400;
  }
-/*container*/
- .container{
-   margin: 0 auto;
-   padding: 0 10px;
- }
+
  /* Layout - features */
+ .features{
+
+ }
  .features-container{
    position: relative;
+   background:var(--basic-grey);
  }
  .promo-wrapper {
    position: relative;
@@ -431,7 +423,8 @@ img{
    display: block;
  }
  .slide {
-   display:none;
+   position: relative;
+   display:;
  }
  .features-description-container {
    position: relative;
@@ -440,7 +433,8 @@ img{
    width: 560px;
  }
  .slide-image {
-   position: absolute;
+   width: 760px;
+   height: 431px;
    z-index: 0;
    right: 0;
    top: 0;
@@ -700,7 +694,6 @@ img{
  .main-title-container{
    width:100%;
    height: 355px;
-   margin-top:-70px;
    background:var(--basic-grey)
  }
  .main-title {
@@ -812,6 +805,7 @@ img{
    font-size: 16px;
    line-height: 18px;
    border-radius: 5px;
+   position: relative;
    color: var(--text-contact-cart);
    background-color: var(--basic-grey);
    box-shadow: 0 0 10px rgba(0,0,0,0.1);
