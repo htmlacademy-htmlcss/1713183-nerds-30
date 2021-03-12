@@ -130,7 +130,7 @@ img{
    border-radius: 3px;
    background-color: var(--basic-grey);
    color: var(--heading-color);
-   margin-left: 40px;
+
  }
 
  .filter-button:hover {
@@ -330,10 +330,12 @@ img{
    margin-top: 0;
    margin-bottom: 26px;
    color: var(--heading-color);
-
-
  }
  .list-description {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   margin-bottom: 39px;
    color: var(--content-color);
  }
 
@@ -433,9 +435,6 @@ img{
  }
 
  /* Layout - features */
- .features{
-
- }
  .features-container{
    position: relative;
    background:var(--basic-grey);
@@ -443,6 +442,7 @@ img{
  .promo-wrapper {
    position: relative;
    width: 1160px;
+   height: 350px;
    margin: 0 auto;
    padding: 0;
  }
@@ -450,13 +450,13 @@ img{
    list-style: none;
    padding-bottom: 80px;
  }
+ .slide {
+   display: none;
+ }
  .slide-current {
    display: block;
  }
- .slide {
-   position: relative;
-   display:;
- }
+
  .features-description-container {
    position: relative;
    z-index: 1;
@@ -464,6 +464,7 @@ img{
    width: 560px;
  }
  .slide-image {
+   position: absolute;
    width: 760px;
    height: 431px;
    z-index: 0;
@@ -819,6 +820,7 @@ img{
    background:var(--basic-grey)
  }
  .main-title {
+   min-width: 1160px;
    font-weight: 500;
    font-size: 55px;
    line-height: 55px;
@@ -845,7 +847,6 @@ img{
 
  }
 .sort-list{
-
   flex-grow: 1;
   margin-right: 40px;
   margin-left: 540px;
@@ -857,6 +858,7 @@ img{
 
 .sort-type{
   display: flex;
+  flex-wrap: wrap;
   margin: auto 33px auto 0px;
   list-style: none;
   padding: 0;
@@ -927,16 +929,17 @@ img{
   padding-top: 39px;
   padding-left: 22px;
   padding-right: 22px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
  .range-controls .scale{
    height: 2px;
-   background-color: var(--basic-green);
+   background-color: var(--ui-input-border-color);
  }
  .range-controls .bar{
    height: 2px;
    width: 100%;
+   background-color: var(--basic-green);
  }
  .range-controls .toggle{
    position: absolute;
@@ -962,6 +965,10 @@ img{
  .price-controls label{
    text-transform: uppercase;
    font-size: 16px;
+ }
+ .price-controls{
+   display: flex;
+   justify-content: space-between;
  }
  .price-controls input {
    width: 60px;
@@ -1046,8 +1053,7 @@ opacity: 0.4;
    visibility: hidden;
    content: "";
    position: absolute;
-   top: -2px;
-   left: 2px;
+   left: 5px;
    width: 21px;
    height: 18px;
    background-image: url("../img/ctr.svg");
@@ -1200,6 +1206,7 @@ opacity: 0.4;
  /*Pagination*/
 
  .pagination {
+  margin-left: 40px;
    padding-top: 52px;
    padding-bottom: 60px;
  }
@@ -1207,6 +1214,7 @@ opacity: 0.4;
  .pagination-list {
    display: flex;
    flex-wrap: wrap;
+
  }
  .pagination-list {
    list-style: none;
