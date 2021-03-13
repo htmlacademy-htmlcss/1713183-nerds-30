@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/icons/180.png">
     <link rel="manifest" href="favicon.manifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -42,7 +42,7 @@
        <ul class="features-list promo-wrapper">
          <li class="features-item slide slide-current">
            <div class="features-description-container">
-             <h2 class="list-title">Долго,дорого,скурпулезно</h2>
+             <h2 class="list-title">Долго,дорого,<br>скурпулезно.</h2>
              <p class="list-description">Математически выверенный дизайн<br />для вашего сайта или мобильного приложения</p>
              <a class="button promo-button" href="#">Узнать больше</a>
            </div>
@@ -58,7 +58,7 @@
          </li>
          <li class="features-item slide">
            <div class="features-description-container">
-             <h2 class="list-title">Только ночь,<br />только хардкор</h2>
+             <h2 class="list-title">Только ночь,<br>только хардкор</h2>
              <p class="list-description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
              <a class="button promo-button" href="#">Узнать больше</a>
            </div>
@@ -98,35 +98,38 @@
    </section>
 
    <!--Третий блок описание студии-->
-   <div class="index-columns">
-     <section class="article">
-       <h2>Описание студии</h2>
-       <p class="article-title">Мы — маленькая, но гордая<br>
-         дизайн-студия из Краснодара.</p>
-       <p class="article-item">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-         превыше креатива. Работаем не покладая рук, как роботы.</p>
-       <p class="orders">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+   <section class="article">
+   <div class="article-wrapper">
+       <h2 class="visually-hidden">Описание студии</h2><!--скрытый заголовок-->
+     <div class="article-description-container">
+       <p class="article-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+       <p class="article-item">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+       <h3 class="article-caption">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
        <ul class="orders-list">
          <li class="orders-item">Веб-сайтов любой сложности</li>
          <li class="orders-item">Мобильных приложений для iOS и Android</li>
          <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
        </ul>
-     </section>
-     <section class="article-logo">
-       <img src="img/nerds-illustration.svg" width="360" height="208" alt="Иллюстрация-1">
-       <p class="accuracy">с 2004 года ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-       <ul>
-         <li class="accuracy-percent">146%</li>
-         <li class="accuracy-percent">100%</li>
-         <li class="accuracy-percent">50%</li>
+     </div>
+     <div class="statistics-container">
+       <strong class="accuracy">с 2004 года ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</strong>
+       <ul class="accuracy-list">
+         <li class="accuracy-percent">
+           <span class="accuracy-item">146<sup class="accuracytext">%</sup></span>
+           <p class="accuracy-text">Уровень самоотдачи</p>
+         </li>
+         <li class="accuracy-percent">
+           <span class="accuracy-item">100<sup class="accuracytext">%</sup></span>
+           <p class="accuracy-text">Соблюдение сроков</p>
+         </li>
+         <li class="accuracy-percent">
+           <span class="accuracy-item">50<sup class="accuracytext">%</sup></span>
+           <p class="accuracy-text">Минимальная предоплата</p>
+         </li>
        </ul>
-       <ul >
-         <li class="accuracy-tag">Уровень самоотдачи</li>
-         <li class="accuracy-tag">Соблюдение сроков</li>
-         <li class="accuracy-tag">Минимальная предоплата</li>
-       </ul>
-     </section>
+     </div>
    </div>
+   </section>
    <!--Четвертый блок с логотипами-->
    <section class="clients">
      <div class="clients-wrapper">
